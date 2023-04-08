@@ -1,16 +1,16 @@
 create table tb_attempt_requirements(
-    id number not null unique,
+    id serial not null unique,
     auction_id UUID not null unique,
-    approve_required number default 0,
-    enter_fee_required number default 0,
-    enter_fee_amount number
+    approve_required integer default 0,
+    enter_fee_required integer default 0,
+    enter_fee_amount integer default null
 );
 
 
 create table tb_attempt_requests(
-    id number not null unique,
+    id serial not null unique,
     auction_id UUID not null,
-    user_id number not null,
-    approved number default 0,
-    enter_fee_payed number default 0
+    user_id integer not null,
+    approved integer default 0,
+    enter_fee_payed integer default null
 );

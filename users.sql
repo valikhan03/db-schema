@@ -7,3 +7,11 @@ CREATE TABLE IF NOT EXISTS tb_users(
     password TEXT,
     PRIMARY KEY (id)
 );
+
+create view vw_users_info as
+id,
+full_name,
+birth_date,
+phone_num,
+email
+from tb_users;
