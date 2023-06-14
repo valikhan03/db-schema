@@ -27,3 +27,12 @@ create table tb_payments(
     payed_amount integer,
     currency text
 );
+
+
+
+create table tb_dict_product_type(
+    id integer,
+    p_name text
+);
+
+insert into tb_dict_product_type (id, p_name) values (0, 'Payment'), (1, 'Auction registration payment'), (2, 'Enter fee payment'), (3, 'Lot payment');

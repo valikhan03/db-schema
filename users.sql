@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS tb_users(
 );
 
 create view vw_users_info as
+select
 id,
 full_name,
 birth_date,
